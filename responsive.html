@@ -4,6 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Website</title>
+    <style>
+      body {
+        border: 1px solid teal;
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+      .img-container {
+        display: flex;
+      }
+      .img-container div {
+        width: 50%;
+      }
+      .img-container img {
+        width: 100%;
+      }
+      @media screen and (max-width: 576px) {
+        .img-container {
+          flex-direction: column-reverse;
+        }
+        .img-container div {
+          width: 100%;
+        }
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h2>Responsive Website</h2>
+      <ol>
+        <li>Viewport Meta Tag</li>
+        <li>CSS Relative Unit</li>
+        <li>Body max width and horizontal center align</li>
+        <li>image fluid</li>
+        <li>tow column flex and use media query with flex direction column</li>
+        <li></li>
+        <li></li>
+      </ol>
+    </header>
+    <main>
+      <div class="img-container">
+        <div>
+          <img src="images/healthy-011636373981.jpg" alt="healthy-food" />
+        </div>
+        <div>
+          <img src="images/tiger-Siberian.webp" alt="healthy-food" />
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
